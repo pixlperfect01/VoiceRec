@@ -1,7 +1,4 @@
 let speech;
-var responses = {
-
-};
 
 function setup(){
   noCanvas();
