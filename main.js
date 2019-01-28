@@ -1,5 +1,5 @@
 let speech;
-
+let inputs = ["Hi", "Hello"];
 function setup(){
   noCanvas();
   let lang = navigator.language || 'en-US';
@@ -21,7 +21,20 @@ function reply(a){
   speech.speak(findReply(a));
 }
 function findReply(a){
-  if(a=="Something"){
+  a = a.toLowerCase();
+  if(a=="something"){
     return "Are You Dumb?";
+  }
+  if(a=="Hi"){
+    return "Hello";
+  }
+  if(a=="Hello"){
+    return "Hi";
+  }
+  if(a=="good morning"){
+    
+  }
+  if(inputs.indexOf(a)==-1){
+    return "I'm not sure how to respond to that";
   }
 }
