@@ -1,6 +1,6 @@
 let speech;
 var responses = {
-  
+
 };
 
 function setup(){
@@ -24,5 +24,7 @@ function reply(a){
   speech.speak(findReply(a));
 }
 function findReply(a){
-  
+  if(a=="Something"){
+    return "Are You Dumb?";
+  }
 }
